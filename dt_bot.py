@@ -63,7 +63,7 @@ async def play_dt(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Owner aur Admin dono access
     if not await is_admin(update, context): return
     d, t = get_cards(CURRENT_MODE)
-    await update.message.reply_text(f"🐉 Dragon: {d[0]}{d[1]}\n🐅 Tiger: {t[0]}{t[1]}")
+    await update.message.reply_text(f"🐉" {d[0]}{d[1]}\n🐅 {t[0]}{t[1]}")
 
 def main():
     application = Application.builder().token(TOKEN).build()
